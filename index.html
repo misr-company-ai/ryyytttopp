@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="duwi0CgJBmEySB9Lq8IFH_o8qHLsDcPdiFjQIAFah58" />
+    
+    <link rel="icon" type="image/png" href="omar.abdelaziz.mersal10.png">
+    <link rel="apple-touch-icon" href="omar.abdelaziz.mersal10.png">
+
+    <meta name="description" content="الصفحة الشخصية لعمر عبد العزيز عبد اللطيف مرسال، مبرمج تطبيقات ومواقع وطالب علاج طبيعي بجامعة العلمين الدولية">
+    <meta name="keywords" content="عمر عبد العزيز عبد اللطيف مرسال, عائلة مرسال, إيتاي البارود, مبرمج PWA, جامعة العلمين الدولية">
+    <title>عمر عبد العزيز عبد اللطيف مرسال</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "عمر عبد العزيز عبد اللطيف مرسال",
+      "jobTitle": "مبرمج ومطور تطبيقات",
+      "email": "3omarabdeaziz3@gmail.com",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "جامعة العلمين الدولية"
+      },
+      "url": "https://misr-company-ai.github.io/omar-abdelaziz-mersal-/",
+      "image": [
+        "omar.abdelaziz.mersal.jpg",
+        "omar.abdelaziz.mersal10.png",
+        "omar.abdelaziz.mersal11.jpg",
+        "omar.abdelaziz.mersal5.jpg"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/omar.mero.5621149",
+        "https://github.com/misr-company-ai"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-black: #000000;
+            --card-bg: rgba(20, 20, 20, 0.8);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+            --accent-blue: #3b82f6;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--text-main);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 15px 25px;
+            border-radius: 30px;
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            color: white;
+            font-size: 1.1rem;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        #search-results {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 15px;
+            z-index: 100;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+
+        .ai-overview {
+            background: rgba(40, 40, 45, 0.5);
+            border: 1px solid rgba(100, 150, 255, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .ai-label {
+            font-size: 0.8rem;
+            color: var(--accent-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .knowledge-panel {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .knowledge-panel { grid-template-columns: 1fr; }
+        }
+
+        .main-info {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .family-section {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+            margin-top: 20px;
+        }
+
+        .side-panel {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .main-photo {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .label { color: var(--text-dim); font-size: 0.9rem; }
+        .val { margin-bottom: 15px; font-weight: 500; }
+
+        .skills-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.05);
+            padding: 4px 12px;
+            border-radius: 5px;
+            margin: 0 0 5px 5px;
+            font-size: 0.85rem;
+        }
+
+        .social-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-links a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 0.9rem;
+            background: rgba(59, 130, 246, 0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="ابحث عن عمر عبد العزيز..." oninput="handleSearch()">
+        <div id="search-results">
+            <div style="font-weight: bold;">عمر عبد العزيز عبد اللطيف مرسال</div>
+            <div style="font-size: 0.8rem; color: #aaa;">طالب علاج طبيعي ومبرمج تطبيقات</div>
+        </div>
+    </div>
+
+    <section class="ai-overview">
+        <div class="ai-label">نبذة باستخدام الذكاء الاصطناعي</div>
+        <div class="content">
+            عمر عبد العزيز عبد اللطيف مرسال هو مبرمج ومطور برمجيات وطالب في كلية العلاج الطبيعي بجامعة العلمين الدولية. يتخصص في تطوير تطبيقات الويب التقدمية والأنظمة التقنية المتكاملة باستخدام لغات PHP و JavaScript و Java. يعمل على دمج الخبرة الأكاديمية الطبية مع الحلول البرمجية المبتكرة وتصميم واجهات المستخدم الحديثة.
+        </div>
+    </section>
+
+    <main class="knowledge-panel">
+        <div class="main-info">
+            <h2>من هو عمر عبد العزيز؟</h2>
+            <p>طالب متميز في السنة الثانية بكلية العلاج الطبيعي بجامعة العلمين الدولية، استطاع دمج شغفه بالبرمجة مع مساره الأكاديمي. متخصص في تصميم واجهات المستخدم العصرية وبناء الأنظمة البرمجية المعقدة.</p>
+            
+            <div class="family-section">
+                <h3 style="margin-top: 0;">عائلة مرسال</h3>
+                <img src="عائله مرسال.png" alt="عائلة مرسال" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+                <p>عائلة مرسال هي عائلة تسكن في مصر في محافظة البحيرة بمركز إيتاي البارود. وهم معروفون أنهم ذو سلطة ومكانة قوية جدا ولهم نفوذ واسع وذو مكانة قوية في المنطقة.</p>
+            </div>
+
+            <h3 style="margin-top: 30px;">التخصص البرمجي</h3>
+            <div class="skills-tag">PWA</div>
+            <div class="skills-tag">Native Apps</div>
+            <div class="skills-tag">Java</div>
+            <div class="skills-tag">Kotlin</div>
+            <div class="skills-tag">PHP</div>
+            
+            <h3 style="margin-top: 30px;">معلومات التواصل</h3>
+            <a href="https://wa.me/201005397353" style="display:block; color:var(--accent-blue); text-decoration:none; margin-bottom:5px;">واتساب: 01005397353</a>
+            <div class="val">البريد الإلكتروني: 3omarabdeaziz3@gmail.com</div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/omar.mero.5621149" target="_blank">فيسبوك</a>
+                <a href="https://github.com/misr-company-ai" target="_blank">جيت هاب</a>
+            </div>
+        </div>
+
+        <div class="side-panel">
+            <img src="omar.abdelaziz.mersal.jpg" class="main-photo" alt="عمر عبد العزيز">
+            
+            <div class="label">الاسم الكامل</div>
+            <div class="val">عمر عبد العزيز عبد اللطيف مرسال</div>
+
+            <div class="label">الجامعة</div>
+            <div class="val">جامعة العلمين الدولية</div>
+
+            <div class="label">الكلية</div>
+            <div class="val">العلاج الطبيعي (سنة ثانية)</div>
+
+            <div class="label">تاريخ الالتحاق</div>
+            <div class="val">2024</div>
+
+            <div class="label">معرض الصور</div>
+            <div class="image-gallery">
+                <img src="omar.abdelaziz.mersal10.png" class="gallery-img">
+                <img src="omar.abdelaziz.mersal11.jpg" class="gallery-img">
+                <img src="omar.abdelaziz.mersal5.jpg" class="gallery-img">
+            </div>
+        </div>
+    </main>
+</div>
+
+<script>
+    function handleSearch() {
+        const input = document.getElementById('search-input').value;
+        const results = document.getElementById('search-results');
+        if (input.includes('عمر') || input.includes('Omar')) {
+            results.style.display = 'block';
+        } else {
+            results.style.display = 'none';
+        }
+    }
+    document.addEventListener('click', function(e) {
+        if (!document.querySelector('.search-box').contains(e.target)) {
+            document.getElementById('search-results').style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
